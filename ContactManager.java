@@ -205,14 +205,14 @@ class Contact {
 
     public Contact(Scanner sc) {
         System.out.print("Enter name: ");
-        this.name = sc.nextLine().toLowerCase().trim();
+        name = sc.nextLine().toLowerCase().trim();
 
         System.out.print("Enter category(family/friends/others): ");
-        this.category= sc.nextLine().toLowerCase().trim();
+        category= sc.nextLine().toLowerCase().trim();
         
         
         System.out.print("Enter phone number: ");
-        this.phoneNumber = sc.nextLong();
+        phoneNumber = sc.nextLong();
     }
 
     public String getName(){
