@@ -1,4 +1,4 @@
-package dsaPractices;
+package dsapractice;
 
 import java.util.HashMap;
 import java.util.LinkedList;

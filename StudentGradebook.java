@@ -1,4 +1,4 @@
-package dsaPractices;
+package dsapractice;
 
 public class StudentGradebook {
     
