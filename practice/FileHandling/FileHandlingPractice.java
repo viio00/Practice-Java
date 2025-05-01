@@ -1,4 +1,4 @@
-package practice;
+package practice.FileHandling;
 
 import java.io.File;
 import java.io.FileWriter; //Input/Output
