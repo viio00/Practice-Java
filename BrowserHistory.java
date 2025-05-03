@@ -1,4 +1,4 @@
-package dsapractice;  
+package practice;  
 
 import java.util.Scanner;
 import java.util.Stack;

@@ -1,0 +1,3 @@
+length: 57
+path: app/src/main/java/practice/FileHandling/SampleFile.txt
+Number of words: 11
