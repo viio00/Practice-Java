@@ -13,7 +13,6 @@ public class DynamicArrPrac {
         arr.add(40);
         arr.add(50); //this will call resize()
 
-
         System.out.print("List: ");
         for (int i=0; i<arr.getSize();i++) {
             System.out.print(arr.getValue(i) + " ");
@@ -36,7 +35,6 @@ public class DynamicArrPrac {
 
         System.out.println();
         System.out.println();
-
 
         arr2.add(9);
         arr2.add(4);
@@ -112,11 +110,11 @@ public class DynamicArrPrac {
     }
 }
 
-//Build dynamic Array
+//Build dynamic Array (acts like an Arraylist)
 class BuildDynamicArray {
 
-    private int[] data; // internal array to store data
-    private int size; // keep track of size
+    private int[] data; 
+    private int size; 
 
     //initialize
     public BuildDynamicArray() {
@@ -126,10 +124,10 @@ class BuildDynamicArray {
 
     public void add(int val) {
         if (size == data.length) {
-            resize();
+            resize(); // doubles the size 
         }
 
-        data[size++] = val;
+        data[size++] = val; //tracks the size
     }
 
     public void resize() {
@@ -138,7 +136,7 @@ class BuildDynamicArray {
         for (int i=0; i<data.length; i++) {
             newData[i] = data[i];
         }
-        //System.arraycopy(data, 0, newData, 0, data.length);
+        //System.arraycopy(data, 0, newData, 0, data.length); -- another way of doing it (copy)
         data = newData;
     }
 
@@ -151,6 +149,8 @@ class BuildDynamicArray {
         return size;
     }
 
+    //converting dynamic array to a normal array since there are methods with int[] parameters
+    //Note: ArrayList does not hold primitive data types (unlike arrays), they hold objects(wrapper)
     public int[] toArray() {
         int[] res = new int[size];
         for (int i=0; i<size; i++) {
