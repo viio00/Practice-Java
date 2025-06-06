@@ -205,10 +205,10 @@ class Contact {
 
     public Contact(Scanner sc) {
         System.out.print("Enter name: ");
-        name = sc.nextLine().toLowerCase().trim();
+        name = sc.nextLine();
 
         System.out.print("Enter category(family/friends/others): ");
-        category= sc.nextLine().toLowerCase().trim();
+        category= sc.nextLine();
         
         
         System.out.print("Enter phone number: ");
