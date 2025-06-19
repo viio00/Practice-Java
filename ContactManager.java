@@ -242,3 +242,5 @@ class Contact {
         return capitalize(name) + " | " + phoneNumber + " | " + capitalize(category) ;
     }
 }
+
+//Ignore this message
